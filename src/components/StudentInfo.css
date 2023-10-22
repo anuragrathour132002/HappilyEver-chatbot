@@ -1,0 +1,82 @@
+.typewriter{
+    text-align: center;
+    width: 100%;
+}
+
+  
+ 
+  
+  @keyframes typewriter {
+    0%, 100% {
+      width: 0;
+    }
+    20%, 80% {
+      width: 16.2em;
+    }
+  }
+  @keyframes typewriter2 {
+    0%, 100% {
+      width: 0;
+    }
+    20%, 80% {
+      width: 16.2em;
+    }
+  }
+  .text{
+    width: 20em;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-iteration-count: 1;
+
+  }
+ 
+  .text_1 {
+    color: rgb(108, 107, 107);
+    animation: typewriter;
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation-duration: 5s;
+    animation-timing-function: steps(10, end);
+  }
+  .text_2 {
+   
+    animation: typewriter2;
+    animation-duration: 10s;
+    animation-timing-function: steps(19, end);
+  
+  }
+  .text_3{
+    animation: typewriter;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+
+  }
+  .name{
+     text-transform: uppercase;
+     color: rgb(149, 72, 72);
+  
+  }
+  
+  .exit-text{
+    color: red;
+    text-decoration: none;
+  }
+  
+@media only screen and (max-width: 768px) {
+  .text{
+    font-size: 2.5em;
+    white-space: wrap;
+    width: 100%;
+    animation: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .text{
+    font-size: 18px;
+    width: 100%;
+    animation: none;
+  }
+ 
+}

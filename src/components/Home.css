@@ -1,0 +1,73 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
+
+.home-container {
+  margin-top: 23px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.logo {
+  text-align: left;
+
+  width: 280px;
+  height: 350px;
+  /* display: none;  */
+}
+
+.comp {
+  flex: 0.5;
+  text-align: center;
+}
+
+.comp p {
+  font-size: 28px;
+}
+
+.enroll-button {
+  font-size: 24px;
+  padding: 9px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(11, 37, 139);
+  filter: brightness(2);
+  color: rgb(13, 148, 244);
+  border: none;
+  transition: 0.2s all;
+
+}
+
+.comp .enroll-button:hover {
+  filter: brightness(1);
+  color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .home {
+    height: 100%;
+  }
+
+  .home-container {
+    display: block;
+    margin-top: 0;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .comp-text {
+    margin-top: 30vh;
+  }
+
+  .logo {
+    display: none;
+  }
+}
